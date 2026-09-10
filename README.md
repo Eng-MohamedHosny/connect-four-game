@@ -4,7 +4,7 @@ This is a solution to the [Connect Four Game challenge on Frontend Mentor](https
 
 ## 🔗 Links
 
-- **Live Site URL**: [https://30-connect-four-game.vercel.app](https://30-connect-four-game.vercel.app)
+- **Live Site URL**: [https://pretty-connect-four-game.vercel.app](https://pretty-connect-four-game.vercel.app)
 - **GitHub Repository**: [https://github.com/Eng-MohamedHosny/connect-four-game](https://github.com/Eng-MohamedHosny/connect-four-game)
 
 ---
