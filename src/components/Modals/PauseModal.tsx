@@ -36,7 +36,7 @@ export const PauseModal: React.FC<PauseModalProps> = ({
       aria-modal="true"
       aria-labelledby="pause-title"
     >
-      <div className="w-full max-w-[480px] bg-[#7945FF] border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-6 sm:px-10 py-10 sm:py-12 select-none flex flex-col items-center gap-6">
+      <div className="w-full max-w-[335px] md:max-w-[480px] bg-[#7945FF] border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-5 md:px-10 py-10 md:py-12 select-none flex flex-col items-center gap-6">
         {/* Title */}
         <h2
           id="pause-title"
@@ -53,7 +53,7 @@ export const PauseModal: React.FC<PauseModalProps> = ({
               sounds.playClick();
               onResume();
             }}
-            className="w-full h-[72px] bg-white hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-black text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-purple-300"
+            className="w-full h-[72px] bg-white hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-black text-[20px] md:text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-purple-300"
           >
             Continue Game
           </button>
@@ -64,7 +64,7 @@ export const PauseModal: React.FC<PauseModalProps> = ({
               sounds.playClick();
               onRestart();
             }}
-            className="w-full h-[72px] bg-white hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-black text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-purple-300"
+            className="w-full h-[72px] bg-white hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-black text-[20px] md:text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-purple-300"
           >
             Restart
           </button>
@@ -75,7 +75,7 @@ export const PauseModal: React.FC<PauseModalProps> = ({
               sounds.playClick();
               onQuit();
             }}
-            className="w-full h-[72px] bg-[#FD6687] hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-white text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-rose-400"
+            className="w-full h-[72px] bg-[#FD6687] hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] text-white text-[20px] md:text-[24px] font-bold uppercase transition-all duration-150 cursor-pointer btn-press focus:outline-none focus:ring-4 focus:ring-rose-400"
           >
             Quit Game
           </button>

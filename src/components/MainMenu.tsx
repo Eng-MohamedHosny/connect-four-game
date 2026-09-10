@@ -11,9 +11,9 @@ interface MainMenuProps {
 export const MainMenu: React.FC<MainMenuProps> = ({ onStartGame, onOpenRules }) => {
   return (
     <div className="min-h-screen w-full bg-[#5C2DD5] flex items-center justify-center p-4">
-      <main className="w-full max-w-[480px] bg-[#7945FF] border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-5 sm:px-10 py-12 sm:py-16 select-none flex flex-col items-center">
+      <main className="w-full max-w-[335px] md:max-w-[480px] bg-[#7945FF] border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-5 md:px-10 py-14 md:py-16 select-none flex flex-col items-center">
         {/* Logo */}
-        <div className="mb-14 sm:mb-16">
+        <div className="mb-14 md:mb-16">
           <img
             src={ASSETS.logo}
             alt="Connect Four Logo"
@@ -31,7 +31,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({ onStartGame, onOpenRules }) 
             }}
             className="w-full h-[72px] bg-[#FD6687] hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] px-5 flex items-center justify-between transition-all duration-150 cursor-pointer btn-press group focus:outline-none focus:ring-4 focus:ring-rose-400"
           >
-            <span className="text-[20px] sm:text-[24px] font-bold text-white uppercase tracking-normal">
+            <span className="text-[20px] md:text-[24px] font-bold text-white uppercase tracking-normal">
               Play vs CPU
             </span>
             <img
@@ -50,7 +50,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({ onStartGame, onOpenRules }) 
             }}
             className="w-full h-[72px] bg-[#FFCE67] hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] px-5 flex items-center justify-between transition-all duration-150 cursor-pointer btn-press group focus:outline-none focus:ring-4 focus:ring-amber-300"
           >
-            <span className="text-[20px] sm:text-[24px] font-bold text-black uppercase tracking-normal">
+            <span className="text-[20px] md:text-[24px] font-bold text-black uppercase tracking-normal">
               Play vs Player
             </span>
             <img
@@ -69,7 +69,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({ onStartGame, onOpenRules }) 
             }}
             className="w-full h-[72px] bg-white hover:border-[#5C2DD5] hover:shadow-[0px_10px_0px_0px_#5C2DD5] border-[3px] border-black rounded-[20px] shadow-[0px_10px_0px_0px_#000000] px-5 flex items-center justify-between transition-all duration-150 cursor-pointer btn-press group focus:outline-none focus:ring-4 focus:ring-purple-300"
           >
-            <span className="text-[20px] sm:text-[24px] font-bold text-black uppercase tracking-normal">
+            <span className="text-[20px] md:text-[24px] font-bold text-black uppercase tracking-normal">
               Game Rules
             </span>
           </button>

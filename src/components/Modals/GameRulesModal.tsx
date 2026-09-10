@@ -29,7 +29,7 @@ export const GameRulesModal: React.FC<GameRulesModalProps> = ({ isOpen, onClose 
       aria-modal="true"
       aria-labelledby="rules-title"
     >
-      <div className="relative w-full max-w-[480px] bg-white border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-6 sm:px-10 pt-8 pb-14 select-none">
+      <div className="relative w-full max-w-[335px] md:max-w-[480px] bg-white border-[3px] border-black rounded-[40px] shadow-[0px_10px_0px_0px_#000000] px-6 md:px-10 pt-8 pb-14 select-none">
         {/* Rules Title */}
         <h2
           id="rules-title"

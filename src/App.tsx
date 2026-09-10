@@ -86,14 +86,14 @@ export function App() {
 
   // Game Playing Screen
   return (
-    <div className="relative min-h-screen w-full bg-[#7945FF] overflow-x-hidden flex flex-col justify-between pb-8 sm:pb-12">
+    <div className="relative min-h-screen w-full bg-[#7945FF] overflow-x-hidden flex flex-col justify-between pb-8 md:pb-12">
       {/* Background Bottom Shelf (transforms to winning color) */}
       <BottomShelf gameStatus={gameStatus} winInfo={winInfo} />
 
       {/* Main Game Content */}
-      <div className="relative z-10 w-full max-w-[1140px] mx-auto px-4 pt-4 sm:pt-6 flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-[1140px] mx-auto px-4 pt-6 md:pt-8 flex flex-col items-center">
         {/* Top Header */}
-        <div className="w-full max-w-[632px] mb-6 sm:mb-8">
+        <div className="w-full max-w-[335px] md:max-w-[632px] mb-8 md:mb-10">
           <Header
             onMenuClick={handleOpenPause}
             onRestartClick={restartGame}
@@ -101,7 +101,7 @@ export function App() {
         </div>
 
         {/* Tablet & Mobile: Score Cards Row (Above Board) */}
-        <div className="w-full max-w-[632px] flex lg:hidden items-center justify-between gap-4 mb-8 sm:mb-10 px-2 sm:px-4">
+        <div className="w-full max-w-[335px] md:max-w-[632px] flex lg:hidden items-center justify-between mb-8 md:mb-10">
           <ScoreCard
             player="red"
             gameMode={gameMode}

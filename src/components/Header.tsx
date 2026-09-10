@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onMenuClick, onRestartClick }) => {
   return (
-    <header className="w-full max-w-[632px] mx-auto flex items-center justify-between px-4 sm:px-0 py-2 sm:py-4">
+    <header className="w-full max-w-[335px] md:max-w-[632px] mx-auto flex items-center justify-between">
       {/* Menu Button */}
       <button
         onClick={() => {
@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ onMenuClick, onRestartClick }) =
       <img
         src={ASSETS.logo}
         alt="Connect Four Logo"
-        className="w-[40px] sm:w-[52px] h-[40px] sm:h-[52px] object-contain select-none"
+        className="w-[40px] md:w-[52px] h-[40px] md:h-[52px] object-contain select-none"
       />
 
       {/* Restart Button */}
