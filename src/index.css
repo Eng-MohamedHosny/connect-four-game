@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-dark-purple: #5C2DD5;
+  --color-purple: #7945FF;
+  --color-accent-red: #FD6687;
+  --color-accent-yellow: #FFCE67;
+  --shadow-card: 0px 10px 0px 0px #000000;
+  --shadow-card-hover: 0px 10px 0px 0px #5C2DD5;
+  --shadow-small: 0px 5px 0px 0px #000000;
+  --shadow-small-hover: 0px 5px 0px 0px #5C2DD5;
+}
+
+@keyframes dropDisc {
+  0% {
+    transform: translateY(-600px);
+    opacity: 0.3;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-drop {
+  animation: dropDisc 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes bounceMarker {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-marker {
+  animation: bounceMarker 1.2s ease-in-out infinite;
+}
+
+/* Custom button press feel */
+.btn-press:active {
+  transform: translateY(2px);
+}
